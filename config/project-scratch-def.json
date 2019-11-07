@@ -1,0 +1,11 @@
+{
+  "orgName": "adx-bb-sfdx-packaged",
+  "edition": "Enterprise",
+  "features": [],
+  "settings": {
+    "orgPreferenceSettings": {
+      "s1DesktopEnabled": true,
+      "chatterEnabled": true
+    }
+  }
+}

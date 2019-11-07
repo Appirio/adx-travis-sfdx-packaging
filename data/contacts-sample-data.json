@@ -1,0 +1,110 @@
+{
+    "records": [{
+            "attributes": {
+                "type": "Contact",
+                "referenceId": "ContactRef1"
+            },
+            "LastName": "White",
+            "FirstName": "Carol",
+            "Title": "VP Sales",
+            "Phone": "(415) 555-1212",
+            "Email": "info@salesforce.com",
+            "AccountId": "@AccountRef1"
+        },
+        {
+            "attributes": {
+                "type": "Contact",
+                "referenceId": "ContactRef2"
+            },
+            "LastName": "Minor",
+            "FirstName": "Geoff",
+            "Title": "President",
+            "Phone": "(415) 555-1212",
+            "Email": "info@salesforce.com",
+            "AccountId": "@AccountRef1"
+        },
+        {
+            "attributes": {
+                "type": "Contact",
+                "referenceId": "ContactRef3"
+            },
+            "LastName": "Amos",
+            "FirstName": "Jon",
+            "Title": "Sales Manager",
+            "Phone": "(905) 555-1212",
+            "Email": "info@salesforce.com",
+            "AccountId": "@AccountRef1"
+        },
+        {
+            "attributes": {
+                "type": "Contact",
+                "referenceId": "ContactRef4"
+            },
+            "LastName": "Land",
+            "FirstName": "Mark",
+            "Title": "Customer",
+            "Phone": "(415) 555-5555",
+            "Email": "your.email@test.com",
+            "AccountId": "@AccountRef2"
+        },
+        {
+            "attributes": {
+                "type": "Contact",
+                "referenceId": "ContactRef5"
+            },
+            "LastName": "Tomlin",
+            "FirstName": "Leanne",
+            "Title": "VP Customer Support",
+            "Phone": "(212) 555-5555",
+            "Email": "info@salesforce.com",
+            "AccountId": "@AccountRef2"
+        },
+        {
+            "attributes": {
+                "type": "Contact",
+                "referenceId": "ContactRef6"
+            },
+            "LastName": "Jones",
+            "FirstName": "Howard",
+            "Title": "Buyer",
+            "Phone": "(212) 555-5555",
+            "Email": "info@salesforce.com",
+            "AccountId": "@AccountRef2"
+        },
+        {
+            "attributes": {
+                "type": "Contact",
+                "referenceId": "ContactRef7"
+            },
+            "LastName": "Stamos",
+            "FirstName": "Edward",
+            "Title": "President and CEO",
+            "Phone": "(212) 555-5555",
+            "Email": "info@salesforce.com",
+            "AccountId": "@AccountRef2"
+        },
+        {
+            "attributes": {
+                "type": "Contact",
+                "referenceId": "ContactRef8"
+            },
+            "LastName": "Smith",
+            "FirstName": "John",
+            "Phone": "(212) 555-5555",
+            "Email": "john@servicecloud.trial",
+            "AccountId": "@AccountRef2"
+        },
+        {
+            "attributes": {
+                "type": "Contact",
+                "referenceId": "ContactRef9"
+            },
+            "LastName": "Benioff",
+            "FirstName": "Marc",
+            "Title": "Executive Officer",
+            "Phone": "(415) 901-7000",
+            "Email": "info@salesforce.com",
+            "AccountId": "@AccountRef3"
+        }
+    ]
+}

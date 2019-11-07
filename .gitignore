@@ -1,0 +1,58 @@
+# local config files.
+.env
+config/local*
+
+# Dependency directories
+node_modules/
+
+# MacOS system files
+.DS_Store
+
+# But don't ignore certain config files
+!/.travis.yml
+
+# Windows system files
+Thumbs.db
+ehthumbs.db
+[Dd]esktop.ini
+$RECYCLE.BIN/
+
+# Folders used by plugins and IDE
+.vscode/
+!.vscode/extensions.json
+!.vscode/launch.json
+.salesforce
+.sfdx
+.project
+.salesforce
+.idea
+.settings
+.appirio
+
+# Temporary build Folders
+package/
+build/
+
+# Logs
+RetrieveStatistics.log
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Eslint cache
+.eslintcache
+
+# Other Stuff?
+.classpath
+.tern-project
+selenium-client-jars/
+test/artifacts
+/bin/
+
+#Local test file
+test.js
+
+#testing ezbake
+/ezbake-sample

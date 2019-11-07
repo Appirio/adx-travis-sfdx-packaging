@@ -1,0 +1,39 @@
+{
+    "records": [
+        {
+            "attributes": {
+                "type": "Account",
+                "referenceId": "AccountRef1"
+            },
+            "Name": "Global Media",
+            "Industry": "Media",
+            "NumberOfEmployees": 14668,
+            "Phone": "(905) 555-1212",
+            "Type": "Prospect"
+        },
+        {
+            "attributes": {
+                "type": "Account",
+                "referenceId": "AccountRef2"
+            },
+            "Name": "Acme",
+            "Industry": "Manufacturing",
+            "NumberOfEmployees": 680,
+            "AnnualRevenue": 100000000,
+            "Phone": "(212) 555-5555",
+            "Type": "Prospect",
+            "Fax": "(212) 555-5555"
+        },
+        {
+            "attributes": {
+                "type": "Account",
+                "referenceId": "AccountRef3"
+            },
+            "Name": "salesforce.com",
+            "Industry": "Technology",
+            "Phone": "(415) 901-7000",
+            "Type": "Customer",
+            "Fax": "(415) 901-7040"
+        }
+    ]
+}

@@ -1,0 +1,25 @@
+{
+    "namespace": "",
+    "sfdcLoginUrl": "https://login.salesforce.com",
+    "packageDirectories": [{
+        "path": "force-app/main",
+        "package": "adx-travisci-health",
+        "versionName": "ver 0.1",
+        "versionNumber": "0.1.0.NEXT",
+        "default": true
+    }],
+    "plugins": {
+        "appiriodx": {
+            "packages": [{
+                "name": "adx-travisci-health",
+                "description": "ADX Travis CI Package Healthcare",
+                "packageType": "Unlocked",
+                "alias": "adx-travisci-health"
+            }]
+        }
+    },
+    "sourceApiVersion": "42.0",
+    "packageAliases": {
+        "adx-travisci-health": "0Ho1T000000fxU2SAI"
+    }
+}
