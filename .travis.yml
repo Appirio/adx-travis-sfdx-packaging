@@ -13,6 +13,7 @@ before_install:
 
 stages:
   - name: sonarqube_scan_publish
+    if: (branch = master) OR (branch =~ feature\/*)
   - name: publish
     if: branch = master
   - name: install_sit
