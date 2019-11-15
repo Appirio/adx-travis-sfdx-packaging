@@ -13,21 +13,21 @@ before_script:
 stages:
   - name: sonarqube_scan_publish
     if: (branch = master) OR (branch =~ feature\/*)
-  - name: publish
+  - name: version_package
     if: branch = master
-  - name: install_sit
+  - name: install_to_SIT
     if: branch = master
 
 # Ideally, This job should be triggered manually. But currently travis ci does not support manual actions.
 # This 'install to UAT' job gets triggered whenever there is matching tag on commit.
 # This will be updated in future when travis ci starts supporting manual trigger.
-  - name: install_uat
+  - name: install_to_UAT
     if: tag =~ uat-*
 
 # Ideally, This job should be triggered manually. But currently travis ci does not support manual actions.
 # This 'install to PROD' job gets triggered whenever there is matching tag on commit.
 # This will be updated in future when travis ci starts supporting manual trigger.
-  - name: install_prod
+  - name: install_to_PROD
     if: tag =~ prod-*
 
 jobs:
@@ -43,22 +43,22 @@ jobs:
           - export PATH=$(pwd)/$sonar_dir/sonar-scanner-3.0.3.778-linux/bin:$PATH
         script: sonar-scanner -Dsonar.sources=. -Dsonar.login=$SONAR_LOGIN -Dsonar.analysis.mode=publish
 
-      - stage: publish
+      - stage: version_package
         name: version_package
         script:
           - adx sfdx:package:publish --installationkeybypass
 
-      - stage: install_sit
+      - stage: install_to_SIT
         name: install_to_SIT
         script:
           - adx sfdx:package:install --installationkeybypass --destination SIT
 
-      - stage: install_uat
+      - stage: install_to_UAT
         name: install_to_UAT
         script:
           - adx sfdx:package:install --installationkeybypass --destination UAT
 
-      - stage: install_prod
+      - stage: install_to_PROD
         name: install_to_PROD
         script:
           - adx sfdx:package:install --installationkeybypass --destination PROD --release
