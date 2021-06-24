@@ -3,4 +3,5 @@ public with sharing class HelloWorld {
     // Some change
     // Another 1
     // Comment added.
+    //changes
 }
